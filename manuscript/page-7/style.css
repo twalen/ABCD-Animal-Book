@@ -1,9 +1,12 @@
 body {
-  background: #efe7d2;
-  background: -webkit-radial-gradient(left 60%, #efe7d2, #66ad83);
-  background: radial-gradient(at left 60%, #efe7d2, #66ad83);
+  height: 100vh;
+  width: 100vw;
+  background: #698f93;
+  background: #09dff3;
+  background: -webkit-radial-gradient(left 60%, #a9dff3, #faa0ff);
+  background: radial-gradient(at left 60%, #a9dff3, #faa0ff);
 }
 
 .stroke {
-  text-shadow: 3px 3px 0 #fa0, -1px -1px 0 #fa0, 1px -1px 0 #fa0, -1px 1px 0 #fa0, 1px 1px 0 #fa0;
+  text-shadow: 3px 3px 0 #f46, -1px -1px 0 #0f0, 1px -1px 0 #0f0, -1px 1px 0 yellow, 1px 1px 0 yellow;
 }

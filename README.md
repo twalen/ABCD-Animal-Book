@@ -1,4 +1,4 @@
-# ABCD-Animals-Book
+# ABCD-Animals-Book (Polish version)
 
 A cute and cuddly [superbook](https://bubbl.in/about) for newborns. Brought to you by web. 
 

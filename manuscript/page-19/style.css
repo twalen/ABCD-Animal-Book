@@ -1,25 +1,9 @@
 body {
-  height: 100vh;
-  width: 100vw;
-  background: #a0d8ef;
-  background: -webkit-radial-gradient(left 60%, #94ccf9, #a0d8ef);
-  background: radial-gradient(at left 60%, #94ccf9, #a0d8ef);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0;
+  background: #009640;
+  background: -webkit-radial-gradient(left 60%, #009640, #00a6a0);
+  background: radial-gradient(at left 60%, #009640, #00a6a0);
 }
 
 .stroke {
-  text-shadow: 3px 3px 0 #0fa, -1px -1px 0 #afa, 1px -1px 0 #ffa, -1px 1px 0 #ffa, 1px 1px 0 #ffa;
+  text-shadow: 3px 3px 0 #7a0, -1px -1px 0 #f00, 1px -1px 0 #ff0, -1px 1px 0 yellow, 1px 1px 0 orange;
 }

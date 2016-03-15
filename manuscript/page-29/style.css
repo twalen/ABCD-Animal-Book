@@ -1,9 +1,10 @@
 body {
-  background: #009640;
-  background: -webkit-radial-gradient(left 60%, #009640, #00a6a0);
-  background: radial-gradient(at left 60%, #009640, #00a6a0);
+  margin: 0;
+  background-color: #A5B396;
+  background: -webkit-radial-gradient(left 60%, #A5B396, rgba(0, 141, 210, 0.693));
+  background: radial-gradient(at left 60%, #A5B396, rgba(0, 141, 210, 0.93));
 }
 
 .stroke {
-  text-shadow: 3px 3px 0 #7a0, -1px -1px 0 #f00, 1px -1px 0 #ff0, -1px 1px 0 yellow, 1px 1px 0 orange;
+  text-shadow: 3px 3px 0 #afa, -1px -1px 0 #afa, 1px -1px 0 #afa, -1px 1px 0 #afa, 1px 1px 0 #afa;
 }

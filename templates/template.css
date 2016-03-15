@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy|Great+Vibes|Bevan);
+@import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy|Great+Vibes|Rubik);
 html {
   background: white;
 }
@@ -6,12 +6,12 @@ html {
 body {
   margin: 0 0;
   overflow: hidden;
-  font: 6vw/1.2 'Chewy', serif;
+  font: 6vw/1.2 'Rubik', serif;
 }
 
 .leaf {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -42,7 +42,7 @@ h2 {
   font-size: 15vw;
   width: 100vw;
   padding: 0;
-  margin: 5vw 0;
+  margin: 10vw 0;
 }
 
 p {
