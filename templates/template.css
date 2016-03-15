@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy|Great+Vibes|Bevan|Rubik);
+@import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy|Great+Vibes|Bevan);
 html {
   background: white;
 }
@@ -6,7 +6,7 @@ html {
 body {
   margin: 0 0;
   overflow: hidden;
-  font: 6vw/1.2 'Chewy', serif;
+  font: 6vw/1.2 'Chau Philomene One', serif;
 }
 
 .leaf {
