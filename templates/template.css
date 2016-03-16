@@ -1,4 +1,3 @@
-@import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy|Great+Vibes|Bevan);
 html {
   background: white;
 }
@@ -6,7 +5,7 @@ html {
 body {
   margin: 0 0;
   overflow: hidden;
-  font: 6vw/1.2 'Chau Philomene One', serif;
+  font: 6vw/1.2 'Galindo', serif;
 }
 
 .leaf {
@@ -31,7 +30,7 @@ body {
 }
 
 h1 {
-  font-size: 50vw;
+  font-size: 42vw;
   width: 100vw;
   height: 50vh;
   padding: 0;
@@ -39,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-size: 15vw;
+  font-size: 10vw;
   width: 100vw;
   padding: 0;
   margin: 5vw 0;
