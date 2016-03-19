@@ -1,60 +1,10 @@
 body {
-  background: #fff;
-  margin: 0 0;
-  overflow: hidden;
-  color: #444;
-  font: 4vw/1.2 'EB Garamond', serif;
-}
-
-.inner {
-  width: 80vw;
-  height: 50vh;
-}
-
-h1 {
-  margin: 2vw 0;
-  padding: 0;
-  color: #666;
-  font-size: 8vw;
-  width: 100%;
-  text-align: center;
-  height: auto;
-}
-
-p {
-  margin: 3vw 0;
-  font-size: 4vw;
-  padding: 0;
-}
-
-ol {
-  list-style-type: lower-roman;
-  list-style-position: inside;
-  list-style-image: none;
   margin: 0;
-  padding: 1vw 5vw;
-  font-size: 3vw;
-  font-family: 'EB Garamond', sans-serif;
+  background-color: #A5B396;
+  background: -webkit-radial-gradient(left 60%, #A5B396, rgba(0, 141, 210, 0.693));
+  background: radial-gradient(at left 60%, #A5B396, rgba(0, 141, 210, 0.93));
 }
 
-.small {
-  font-size: 80%;
-}
-
-a {
-  color: #0077ff;
-  outline: 0 none;
-  text-decoration: none;
-  text-rendering: optimizelegibility;
-}
-
-a:focus,
-a:active,
-a:hover {
-  outline: 0 none;
-  text-shadow: 0 0 2px #0cf;
-}
-
-a:active {
-  text-shadow: 0 0 2px #fff;
+.stroke {
+  text-shadow: 3px 3px 0 #afa, -1px -1px 0 #afa, 1px -1px 0 #afa, -1px 1px 0 #afa, 1px 1px 0 #afa;
 }

@@ -1,11 +1,17 @@
 [
   ["aligator", "fig_alligator", "tpl_alligator"],
+  ["biedronka", "fig_empty", "tpl_empty"],
+  ["czapla", "fig_empty", "tpl_empty"],
+  ["ćma", "fig_empty", "tpl_empty"],
+  ["dzik", "fig_empty", "tpl_empty"],
+  ["emu", "fig_empty", "tpl_empty"],
   ["foka", "fig_seal", "tpl_seal"],
   ["hipopotam", "fig_hippo", "tpl_hippo"],
   ["iguana", "fig_iguana", "tpl_iguana"],
   ["jeleń", "fig_deer", "tpl_deer"],
   ["kot", "fig_cat", "tpl_cat"],
-  ["Lama", "fig_llama", "tpl_llama"],
+  ["lama", "fig_llama", "tpl_llama"],
+  ["łoś", "fig_empty", "tpl_empty"],
   ["małpa", "fig_monkey", "tpl_monkey"],
   ["niedźwiedź", "fig_bear", "tpl_bear"],
   ["ośmiornica", "fig_octopus", "tpl_octopus"],
@@ -16,5 +22,6 @@
   ["tygrys", "fig_tiger", "tpl_tiger"],
   ["wiewiórka", "fig_xerus", "tpl_xerus"],
   ["zebra", "fig_zebra", "tpl_zebra"],
+  ["źrebak", "fig_empty", "tpl_empty"],
   ["żyrafa", "fig_giraffe", "tpl_giraffe"]
 ]

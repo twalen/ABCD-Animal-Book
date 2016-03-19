@@ -70,8 +70,9 @@ def main():
         letter = word.upper()[0]
         if args.upper:
             word = word.upper()
-        p['body'] = p['body'].format(letter, FOR_WORD, word)
-        g.add_page(p)
+        new_p = p.copy()
+        new_p['body'] = p['body'].format(letter, FOR_WORD, word)
+        g.add_page(new_p)
 
     g.add_page(assets['page_56'])
     g.add_page(assets['page_57'])
