@@ -1,7 +1,7 @@
 {
-  "name": "ABCD-Animal-Book-pl",
+  "name": "Alfabet-Polski",
   "version": "0.0.1",
-  "description": "Superbook ABCD-Animal-Book by judag, marvin & fabio (Polish version)",
+  "description": "Superbook Polish ABC Book by tomasz, judag & marvin",
   "keywords": [
     "superbook",
     "bookiza"
@@ -11,7 +11,7 @@
   "homepage": "https://bubbl.in/marvin",
   "repository": {
     "type": "git",
-    "url": "git+https://github/project/url/here"
+    "url": "git+https://github.com/twalen/ABCD-Animal-Book"
   },
   "dependencies": {
     "browser-sync": "2.10.1",

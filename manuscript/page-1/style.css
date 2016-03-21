@@ -1,7 +1,7 @@
 body {
   color: white;
-  background: -webkit-radial-gradient(#ff69B4 50%, #ffadf3 100%);
-  background: radial-gradient(#ff69B4 50%, #ffad83 100%);
+  background: -webkit-radial-gradient(#af6964 50%, #ffadf3 100%);
+  background: radial-gradient(#af6964 50%, #ffad83 100%);
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
@@ -403,7 +403,7 @@ h1 span:nth-child(4) {
   -o-transform: rotate(45deg);
   -webkit-transform: rotate(25deg);
   transform: rotate(25deg);
-  color: #f1b500
+  color: #f1f5af
 }
 
 .d {
