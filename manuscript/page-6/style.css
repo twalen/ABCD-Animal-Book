@@ -1,21 +1,564 @@
 body {
-  height: 100vh;
-  width: 100vw;
-  background: #95dff9;
-  background: -webkit-radial-gradient(right 60%, #95dff9, #fca4f4);
-  background: radial-gradient(at right 60%, #95dff9, #fca4f4);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #95dff9;
+    background: -webkit-radial-gradient(right 60%, #95dff9, #fca4f4);
+    background: radial-gradient(at right 60%, #95dff9, #fca4f4);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(255, 198, 199);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 198, 199, 1) 0%, rgba(191, 221, 252, 1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 198, 199, 1) 0%, rgba(191, 221, 252, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255, 198, 199, 1) 0%, rgba(191, 221, 252, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffc6c7', endColorstr='#bfddfc', GradientType=1);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+.contenedor {
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    margin: 90px auto;
+}
+
+.cigu {
+    position: absolute;
+    margin: 0 30px;
+}
+
+.cabeza {
+    position: absolute;
+    width: 12vw;
+    height: 9.3vw;
+    margin: 14.3vw 35vw;
+    animation: rotar 3s alternate infinite;
+    -moz-animation: rotar 3s alternate infinite;
+    -webkit-animation: rotar 3s alternate infinite;
+}
+
+.head {
+    position: absolute;
+    width: 12vw;
+    height: 10.5vw;
+    background: white;
+    border-radius: 100%;
+    margin: 0vw 0vw;
+}
+
+.ojo {
+    position: absolute;
+    width: 3.3vw;
+    height: 3.3vw;
+    border-radius: 100vw;
+    border: .21vw solid black;
+    margin: 2.5vw 6vw;
+    animation: cerrar 3s alternate infinite;
+    -moz-animation: cerrar 3s alternate infinite;
+    -webkit-animation: cerrar 3s alternate infinite;
+}
+
+.iris {
+    position: absolute;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 100vw;
+    background: black;
+    margin: 0vw 0vw;
+    animation: bajar 3s alternate infinite;
+    -moz-animation: bajar 3s alternate infinite;
+    -webkit-animation: bajar 3s alternate infinite;
+}
+
+.iris::before {
+    content: "";
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 100vw;
+    background: white;
+    margin: 0vw .3vw;
+}
+
+.boca {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 3vw solid #FC5800;
+    border-right: 21vw solid transparent;
+    margin: 3.7vw 7vw;
+}
+
+.boca3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 2.1vw solid #FC5800;
+    border-right: 21vw solid transparent;
+    margin: 5vw 6vw;
+    transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    animation: rotar3 3s alternate infinite;
+    -moz-animation: rotar3 3s alternate infinite;
+    -webkitt-animation: rotar3 3s alternate infinite;
+}
+
+.cuello {
+    position: absolute;
+    width: 25vw;
+    height: 17vw;
+    border-top: 3.5vw solid white;
+    border-left: 3.5vw solid transparent;
+    border-right: 3.5vw solid transparent;
+    border-radius: 192vw / 100vw;
+    transform: rotate(95deg);
+    -moz-transform: rotate(95deg);
+    -webkit-transform: rotate(95deg);
+    margin: 21vw 14vw;
+}
+
+.body {
+    position: absolute;
+    width: 25vw;
+    height: 12vw;
+    border-radius: 0 0 172vw 172vw;
+    background: white;
+    margin: 40.7vw 11.2vw
+}
+
+.ala {
+    position: absolute;
+    width: 21vw;
+    height: 17vw;
+    border-radius: 300vw 3000vw 300vw 3000vw;
+    background: #212121;
+    margin: -7vw -1.2vw;
+    transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    animation: rotar7 3s alternate infinite;
+    -moz-animation: rotar7 3s alternate infinite;
+    -webkit-animation: rotar7 3s alternate infinite;
+}
+
+.ala::before {
+    content: "";
+    position: absolute;
+    width: 19vw;
+    height: 17vw;
+    border-radius: 300vw 3000vw 300vw 3000vw;
+    background: white;
+    margin: 0vw 5vw;
+}
+
+.legs {
+    position: absolute;
+    width: 1.5vw;
+    height: 25vw;
+    background: #FC5800;
+    margin: 50vw 25vw
+}
+
+.legs3 {
+    position: absolute;
+    width: 1.5vw;
+    height: 25vw;
+    background: #FC5800;
+    margin: 50vw 19.9vw;
+    transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+}
+
+.legs7 {
+    position: absolute;
+    width: 6vw;
+    height: 3.5vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #FC5800;
+    margin: 23vw 0vw
+}
+
+.legs7::before {
+    content: "";
+    position: absolute;
+    width: 6vw;
+    height: 3.5vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #FC5800;
+    border-radius: 100%;
+    margin: -.3vw 0vw;
+    transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+}
+
+.legs7::after {
+    content: "";
+    position: absolute;
+    width: 6vw;
+    height: 3.5vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #FC5800;
+    margin: 0vw -.5vw;
+    transform: rotate(21deg);
+    -moz-transform: rotate(21deg);
+    -webkit-transform: rotate(21deg);
+}
+
+.legs9 {
+    position: absolute;
+    width: 6vw;
+    height: 3.5vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #FC5800;
+    margin: 23vw 0vw
+}
+
+.legs9::before {
+    content: "";
+    position: absolute;
+    width: 6vw;
+    height: 3.5vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #FC5800;
+    border-radius: 100%;
+    margin: -.3vw 0vw;
+    transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+}
+
+.legs9::after {
+    content: "";
+    position: absolute;
+    width: 6vw;
+    height: 3.5vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #FC5800;
+    margin: 0vw -.4vw;
+    transform: rotate(21deg);
+    -moz-transform: rotate(21deg);
+    -webkit-transform: rotate(21deg);
+}
+
+.bag,
+.bag3 {
+    position: absolute;
+    display: block;
+    width: 12vw;
+    height: 12vw;
+    -webkit-border-radius: 63vw 63vw 63vw 63vw / 108vw 108vw 72vw 72vw;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.bag {
+    background: #8BDCF4;
+    margin: 65vw 37vw;
+}
+
+.bag::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-top: 3vw solid #8BDCF4;
+    margin: -2.1vw 3vw
+}
+
+.bag::after {
+    content: "";
+    display: block;
+    width: 3vw;
+    height: 1vw;
+    background: #79CAEA;
+    margin: .5vw 4.5vw
+}
+
+.bag3 {
+    background: #F97F9C;
+    margin: 65vw 50vw;
+}
+
+.bag3::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-top: 3vw solid #F97F9C;
+    margin: -2.1vw 3vw
+}
+
+.bag3::after {
+    content: "";
+    display: block;
+    width: 3vw;
+    height: 1vw;
+    background: #F74F76;
+    margin: .5vw 4.5vw
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(40deg);
+        -moz-transform: rotate(40deg);
+        -webkit-transform: rotate(40deg);
+    }
+}
+
+@-moz-keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(40deg);
+        -moz-transform: rotate(40deg);
+        -webkit-transform: rotate(40deg);
+    }
+}
+
+@-webkit-keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(40deg);
+        -moz-transform: rotate(40deg);
+        -webkit-transform: rotate(40deg);
+    }
+}
+
+@keyframes cerrar {
+    0%,
+    25% {
+        opacity: 1
+    }
+    35% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes cerrar {
+    0%,
+    25% {
+        opacity: 1
+    }
+    35% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes cerrar {
+    0%,
+    25% {
+        opacity: 1
+    }
+    35% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes rotar3 {
+    0% {
+        margin-top: 6vw;
+        transform: rotate(6deg);
+        -moz-transform: rotate(6deg);
+        -webkit-transform: rotate(6deg);
+    }
+    100% {
+        margin-top: 4vw;
+        transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes rotar3 {
+    0% {
+        margin-top: 6vw;
+        transform: rotate(6deg);
+        -moz-transform: rotate(6deg);
+        -webkit-transform: rotate(6deg);
+    }
+    100% {
+        margin-top: 4vw;
+        transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes rotar3 {
+    0% {
+        margin-top: 6vw;
+        transform: rotate(6deg);
+        -moz-transform: rotate(6deg);
+        -webkit-transform: rotate(6deg);
+    }
+    100% {
+        margin-top: 4vw;
+        transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes rotar7 {
+    0% {
+        transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+        -moz-transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+    }
+}
+
+@-moz-keyframes rotar7 {
+    0% {
+        transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+        -moz-transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+    }
+}
+
+@-webkit-keyframes rotar7 {
+    0% {
+        transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+        -moz-transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+    }
+}
+
+@keyframes bajar {
+    0%,
+    25% {
+        margin: 0vw 0vw
+    }
+    35% {
+        margin: 0vw 0vw
+    }
+    50% {
+        margin: .73vw .5vw;
+    }
+    75% {
+        margin: .73vw .7vw;
+    }
+    100% {
+        margin: .75vw .55vw
+    }
+}
+
+@-moz-keyframes bajar {
+    0%,
+    25% {
+        margin: 0vw 0vw
+    }
+    35% {
+        margin: 0vw 0vw
+    }
+    50% {
+        margin: .73vw .5vw;
+    }
+    75% {
+        margin: .73vw .7vw;
+    }
+    100% {
+        margin: .75vw .55vw
+    }
+}
+
+@-webkit-keyframes bajar {
+    0%,
+    25% {
+        margin: 0vw 0vw
+    }
+    35% {
+        margin: 0vw 0vw
+    }
+    50% {
+        margin: .73vw .5vw;
+    }
+    75% {
+        margin: .73vw .7vw;
+    }
+    100% {
+        margin: .75vw .55vw
+    }
+    100% {
+        margin: .73vw .5vw
+    }
 }
