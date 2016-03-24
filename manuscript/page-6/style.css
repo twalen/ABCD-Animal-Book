@@ -1,33 +1,9 @@
 body {
     height: 100vh;
     width: 100vw;
-    background: #95dff9;
-    background: -webkit-radial-gradient(right 60%, #95dff9, #fca4f4);
-    background: radial-gradient(at right 60%, #95dff9, #fca4f4);
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 0;
-}
-
-body {
-    height: 100vh;
-    width: 100vw;
     background: rgb(255, 198, 199);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 198, 199, 1) 0%, rgba(191, 221, 252, 1) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 198, 199, 1) 0%, rgba(191, 221, 252, 1) 100%);
-    background: radial-gradient(ellipse at center, rgba(255, 198, 199, 1) 0%, rgba(191, 221, 252, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffc6c7', endColorstr='#bfddfc', GradientType=1);
+    background: -webkit-radial-gradient(right 60%, rgba(255, 198, 199, 1), rgba(191, 221, 252, 1));
+    background: radial-gradient(at right 60%, rgba(255, 198, 199, 1), rgba(191, 221, 252, 1));
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

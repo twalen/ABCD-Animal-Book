@@ -1,13 +1,10 @@
 body {
     height: 100vh;
     width: 100vw;
-    background: rgb(255, 198, 199);
-    background: rgb(0, 60, 124);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 60, 124, 1) 0%, rgba(105, 12, 181, 1) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 60, 124, 1) 0%, rgba(105, 12, 181, 1) 100%);
-    background: radial-gradient(ellipse at center, rgba(0, 60, 124, 1) 0%, rgba(105, 12, 181, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#003c7c', endColorstr='#690cb5', GradientType=1);
-    ;
+
+    background: -webkit-radial-gradient(right 60%, rgba(105, 12, 181, 1), rgba(0, 60, 124, 1));
+    background: radial-gradient(at right 60%, rgba(105, 12, 181, 1), rgba(0, 60, 124, 1));
+
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -34,6 +31,7 @@ body {
 .hamster {
     position: absolute;
     margin: 16.5vw 9vw;
+    top:0;
 }
 
 .cabeza {
@@ -385,6 +383,76 @@ body {
 
 .hands3::after {
     margin: 0vw -2.1vw;
+}
+
+.bigotitos {
+    position: absolute;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-bottom: .3vw solid #333;
+    margin: -19vw -1.2vw;
+}
+
+.bigotitos::before {
+    content: "";
+    position: absolute;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-bottom: .3vw solid #333;
+    margin: .5vw .3vw;
+    -webkit-transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+}
+
+.bigotitos::after {
+    content: "";
+    position: absolute;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-bottom: .3vw solid #333;
+    margin: 1.2vw .3vw;
+    -webkit-transform: rotate(-21deg);
+    -moz-transform: rotate(-21deg);
+    transform: rotate(-21deg);
+}
+
+.bigotitos3 {
+    position: absolute;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-bottom: .3vw solid #333;
+    margin: -19vw 9.7vw;
+}
+
+.bigotitos3::before {
+    content: "";
+    position: absolute;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-bottom: .3vw solid #333;
+    margin: .7vw 1.2vw;
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    transform: rotate(12deg);
+}
+
+.bigotitos3::after {
+    content: "";
+    position: absolute;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-bottom: .3vw solid #333;
+    margin: 1.3vw 1.2vw;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    transform: rotate(25deg);
 }
 
 .to {

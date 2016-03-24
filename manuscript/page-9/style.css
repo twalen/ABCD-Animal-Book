@@ -1,7 +1,9 @@
 body {
   background: #95dff9;
-  background: -webkit-radial-gradient(left 60%, #95dff9, #fca4f4);
-  background: radial-gradient(at left 60%, #95dff9, #fca4f4);
+  background: -webkit-radial-gradient(left 60%, rgba(105, 12, 181, 1), rgba(0, 60, 124, 1));
+  background: radial-gradient(at left 60%, rgba(105, 12, 181, 1), rgba(0, 60, 124, 1));
+  color:white;
+
 }
 
 .stroke {
