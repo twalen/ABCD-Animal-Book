@@ -1,21 +1,507 @@
 body {
-  height: 100vh;
-  width: 100vw;
-  background: #95dff9;
-  background: -webkit-radial-gradient(right 60%, #95dff9, #fca4f4);
-  background: radial-gradient(at right 60%, #95dff9, #fca4f4);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(249, 208, 104, 1);
+    background: -webkit-radial-gradient(right 60%, rgba(249, 208, 104, 1), rgba(252, 234, 187, 1));
+    background: radial-gradient(at right 60%, rgba(249, 208, 104, 1), rgba(252, 234, 187, 1));
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+.contenedor {
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    margin: 90vw auto;
+}
+
+.emu {
+    position: absolute;
+    margin: 0vw 0vw
+}
+
+.head {
+    position: absolute;
+    width: 16vw;
+    height: 19vw;
+    -webkit-border-radius: 63vw 63vw 63vw 63vw / 108vw 108vw 72vw 72vw;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background: #dd8668;
+    margin: 12vw 30vw;
+    animation: rotar 2.1s alternate infinite;
+    -moz-animation: rotar 2.1s alternate infinite;
+    -webkit-animation: rotar 2.1s alternate infinite;
+}
+
+.ojo,
+.ojo3 {
+    position: absolute;
+    width: 3.5vw;
+    height: 4.3vw;
+    border-radius: 100%;
+    background: white;
+    border: .2vw solid #550c05;
+    animation: cerrar 3s alternate infinite;
+    -moz-animation: cerrar 3s alternate infinite;
+    -webkit-animation: cerrar 3s alternate infinite;
+}
+
+.ojo {
+    margin: 7.5vw -.7vw;
+    transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+}
+
+.ojo3 {
+    margin: 7.5vw 12.7vw;
+    transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+}
+
+.ojo::before,
+.ojo3::before {
+    content: "";
+    display: block;
+    width: 3vw;
+    height: 3.5vw;
+    border-radius: 100%;
+    background: #550c05;
+}
+
+.ojo::before {
+    margin: .6vw .5vw;
+}
+
+.ojo3::before {
+    margin: .6vw 0vw;
+}
+
+.ojo::after,
+.ojo3::after {
+    content: "";
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 100vw;
+    background: white;
+}
+
+.ojo::after {
+    margin: -4vw 1.2vw;
+}
+
+.ojo3::after {
+    margin: -4vw 1.5vw;
+}
+
+.iris,
+.iris3 {
+    position: absolute;
+    width: .6vw;
+    height: .6vw;
+    border-radius: 100vw;
+    background: white;
+}
+
+.iris {
+    margin: -2.1vw 2.7vw
+}
+
+.iris3 {
+    margin: -2.1vw .9vw
+}
+
+.boca {
+    position: absolute;
+    width: 18vw;
+    height: 3.5vw;
+    border-radius: 90vw;
+    background: #bc6353;
+    margin: 12vw -1vw
+}
+
+.boca::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 3.5vw solid transparent;
+    border-right: 3.5vw solid transparent;
+    border-bottom: 3vw solid #bc6353;
+    margin: -2vw 5.4vw
+}
+
+.boca3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 3.5vw solid transparent;
+    border-right: 3.5vw solid transparent;
+    border-top: 3vw solid #550c05;
+    margin: 14.3vw 4.3vw;
+    animation: subir 2.1s alternate infinite;
+    -moz-animation: subir 2.1s alternate infinite;
+    -webkit-animation: subir 2.1s alternate infinite;
+}
+
+.bocas {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+    border-top: 2vw solid #ff6666;
+    margin: 12vw 5.7vw;
+    animation: subir3 2.1s alternate infinite;
+    -moz-animation: subir3 2.1s alternate infinite;
+    -webkit-animation: subir3 2.1s alternate infinite;
+}
+
+.cuello {
+    position: absolute;
+    width: 25vw;
+    height: 17vw;
+    border-bottom: 5.5vw solid #dd8668;
+    border-left: 5.5vw solid transparent;
+    border-right: 5.5vw solid transparent;
+    border-radius: 162vw / 100vw;
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    margin: 17vw -3vw;
+}
+
+.body {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 300vw 900vw 300vw 900vw;
+    background: #bc6353;
+    transform: rotate(-21deg);
+    -moz-transform: rotate(-21deg);
+    -webkit-transform: rotate(-21deg);
+    margin: 40vw 39vw
+}
+
+.ala {
+    position: absolute;
+    width: 27vw;
+    height: 27vw;
+    border-radius: 300vw 3000vw 50vw 3000vw;
+    background: #c07659;
+    margin: -.5vw 7vw
+}
+
+.leg {
+    position: absolute;
+    width: 3vw;
+    height: 25vw;
+    background: #ae4633;
+    margin: 65vw 50vw
+}
+
+.leg::before {
+    content: "";
+    position: absolute;
+    width: 5.3vw;
+    height: 6vw;
+    border-radius: 0 0 33vw 33vw;
+    background: #bc6353;
+    margin: 0vw -1vw
+}
+
+.leg3 {
+    position: absolute;
+    width: 3vw;
+    height: 25vw;
+    background: #8b2717;
+    margin: 60.5vw 43vw;
+    transform: rotate(21deg);
+    -moz-transform: rotate(21deg);
+    -webkit-transform: rotate(21deg);
+}
+
+.leg3::before {
+    content: "";
+    position: absolute;
+    width: 5.3vw;
+    height: 6vw;
+    border-radius: 0 0 33vw 33vw;
+    background: #953330;
+    margin: 1vw -1vw;
+}
+
+.leg7 {
+    position: absolute;
+    width: 7.5vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #8b2717;
+    margin: 24vw -4vw;
+    transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+}
+
+.leg7::before {
+    content: "";
+    position: absolute;
+    width: 7.5vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #8b2717;
+    margin: -.3vw -.5vw;
+    transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+}
+
+.leg7::after {
+    content: "";
+    position: absolute;
+    width: 7.5vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #8b2717;
+    margin: .5vw 0vw;
+    transform: rotate(-21deg);
+    -moz-transform: rotate(-21deg);
+    -webkit-transform: rotate(-21deg);
+}
+
+.leg9 {
+    position: absolute;
+    width: 7.5vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #8b2717;
+    margin: 23vw -4.5vw;
+}
+
+.leg9::before {
+    content: "";
+    position: absolute;
+    width: 7.5vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #8b2717;
+    margin: -.3vw -.5vw;
+    transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+}
+
+.leg9::after {
+    content: "";
+    position: absolute;
+    width: 7.5vw;
+    height: 3vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #8b2717;
+    margin: .5vw 0vw;
+    transform: rotate(-21deg);
+    -moz-transform: rotate(-21deg);
+    -webkit-transform: rotate(-21deg);
+}
+
+.cabe {
+    position: absolute;
+    width: 7vw;
+    height: 3.3vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #bc6353;
+    margin: -4vw 2vw;
+    transform: rotate(55deg);
+    -moz-transform: rotate(55deg);
+    -webkit-transform: rotate(55deg);
+}
+
+.cabe::before {
+    content: "";
+    position: absolute;
+    width: 7vw;
+    height: 3.3vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #bc6353;
+    margin: -5vw 2.5vw;
+    transform: rotate(-112deg);
+    -moz-transform: rotate(-112deg);
+    -webkit-transform: rotate(-112deg);
+}
+
+.cabe3 {
+    position: absolute;
+    width: 7vw;
+    height: 3.3vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #bc6353;
+    margin: -2.5vw 1.5vw;
+    transform: rotate(55deg);
+    -moz-transform: rotate(55deg);
+    -webkit-transform: rotate(55deg);
+}
+
+.cabe3::before {
+    content: "";
+    position: absolute;
+    width: 7vw;
+    height: 3.3vw;
+    border-radius: 100%;
+    border-top: 1.2vw groove #bc6353;
+    margin: -5.5vw 3vw;
+    transform: rotate(-112deg);
+    -moz-transform: rotate(-112deg);
+    -webkit-transform: rotate(-112deg);
+}
+
+@keyframes cerrar {
+    0%,
+    25% {
+        opacity: 1
+    }
+    35% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes cerrar {
+    0%,
+    25% {
+        opacity: 1
+    }
+    35% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes cerrar {
+    0%,
+    25% {
+        opacity: 1
+    }
+    35% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+        margin: 12vw 30vw;
+    }
+    100% {
+        transform: rotate(-30deg);
+        margin: 17vw 16vw;
+    }
+}
+
+@-moz-keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+        margin: 12vw 30vw;
+    }
+    100% {
+        transform: rotate(-30deg);
+        margin: 17vw 16vw;
+    }
+}
+
+@-webkit-keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+        margin: 12vw 30vw;
+    }
+    100% {
+        transform: rotate(-30deg);
+        margin: 17vw 16vw;
+    }
+}
+
+@keyframes subir {
+    0% {
+        margin: 14.3vw 4.3vw;
+    }
+    100% {
+        margin: 15vw 4.3vw;
+        ;
+    }
+}
+
+@-moz-keyframes subir {
+    0% {
+        margin: 14.3vw 4.3vw;
+    }
+    100% {
+        margin: 15vw 4.3vw;
+        ;
+    }
+}
+
+@-webkit-keyframes subir {
+    0% {
+        margin: 14.3vw 4.3vw;
+    }
+    100% {
+        margin: 15vw 4.3vw;
+        ;
+    }
+}
+
+@keyframes subir3 {
+    0% {
+        margin: 12vw 5.7vw;
+    }
+    100% {
+        margin: 14.9vw 5.7vw;
+    }
+}
+
+@-moz-keyframes subir3 {
+    0% {
+        margin: 12vw 5.7vw;
+    }
+    100% {
+        margin: 14.9vw 5.7vw;
+    }
+}
+
+@-webkit-keyframes subir3 {
+    0% {
+        margin: 12vw 5.7vw;
+    }
+    100% {
+        margin: 14.9vw 5.7vw;
+    }
 }
