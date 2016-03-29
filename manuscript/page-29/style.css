@@ -1,7 +1,7 @@
 body {
-  background: #95dff9;
-  background: -webkit-radial-gradient(left 60%, #95dff9, #fca4f4);
-  background: radial-gradient(at left 60%, #95dff9, #fca4f4);
+  background: rgb(230, 255, 173);
+  background: -webkit-radial-gradient(left 60%, rgba(227, 245, 171, 1), rgba(189, 221, 70, 1));
+  background: radial-gradient(at left 60%, rgba(227, 245, 171, 1), rgba(189, 221, 70, 1));
 }
 
 .stroke {
