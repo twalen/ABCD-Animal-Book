@@ -2,8 +2,8 @@ body {
   height: 100vh;
   width: 100vw;
   background: #eaed5c;
-  background: -webkit-radial-gradient(right 60%, #caed5c, #f9c534);
-  background: radial-gradient(at right 60%, #caedfc, #f9c534);
+  background: -webkit-radial-gradient(right 60%, #fafdfc, #a9e5f4);
+  background: radial-gradient(at right 60%, #fafdfc, #a9e5f4);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
